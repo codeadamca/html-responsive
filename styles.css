@@ -1,28 +1,30 @@
 
 * {
-    border: 1px solid black;
     box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid red;;
 }
 
-header {
-    background-color: lightblue;
-}
-aside {
-    background-color: lightyellow;
-    width: 20%;
-}
-aside:nth-of-type(2) {
-    background-color: lightgreen;
-}
-section {
-    width: 60%;
-}
+header, 
 footer {
     background-color: lightblue;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
+}
+
+aside {
+    background-color: lightgoldenrodyellow;
+    width: 20%;
+}
+aside:nth-of-type(2) {
+    background-color: lightcoral;
+}
+
+section {
+    width: 60%;
 }
 
 @media (max-width: 1023px) {
@@ -35,11 +37,12 @@ main {
     }
 }
 
-@media (max-width: 767px) { 
-    aside, section {
+@media (max-width: 359px) {
+    aside {
         width: 100%;
     }
     section {
+        width: 100%;
         order: inherit;
     }
 }
